@@ -1,0 +1,10 @@
+REM this is a ducky script for downloading vlc media player notepad++ the brave browser and greenshot
+GUI r 
+DELAY 500
+STRING cmd
+DELAY 800
+ENTER
+DELAY 1000
+STRING winget install --id=VideoLAN.VLC -e  && winget install --id=Notepad++.Notepad++ -e  && winget install --id=Brave.Brave -e  && winget install --id=Greenshot.Greenshot -e 
+DELAY 500
+ENTER

@@ -1,0 +1,5 @@
+GUI r
+DELAY 50
+STRING cmd /k curl ascii.live/rick
+DELAY 100
+ENTER

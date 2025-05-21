@@ -1,0 +1,30 @@
+REM Open PowerShell as Administrator
+DELAY 500
+GUI r
+DELAY 500
+STRING powershell
+DELAY 500
+CTRL SHIFT ENTER
+DELAY 1000
+ALT y
+DELAY 1000
+ENTER
+
+REM Execute Windows Update commands
+STRING echo Checking for Windows updates...
+ENTER
+DELAY 500
+STRING Install-Module -Name PSWindowsUpdate -Force
+ENTER
+DELAY 500
+STRING Import-Module -Name PSWindowsUpdate
+ENTER
+DELAY 500
+STRING Get-WindowsUpdate
+ENTER
+DELAY 500
+STRING Install-WindowsUpdate -AcceptAll -AutoReboot -IgnoreReboot
+ENTER
+DELAY 1000
+STRING exit
+ENTER

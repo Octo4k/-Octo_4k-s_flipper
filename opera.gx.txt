@@ -1,0 +1,10 @@
+REM NOTE :)
+GUI r 
+DELAY 1000
+STRING cmd
+DELAY 1000
+ENTER
+DELAY 1000
+STRING winget install -e --id Opera.OperaGX
+DELAY 1000 
+ENTER

